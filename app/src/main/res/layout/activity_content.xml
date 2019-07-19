@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/top_layer">
+
+        <LinearLayout
+            android:id="@+id/image_bg"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_bg"
+            android:gravity="center">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_id"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_bg"
+            android:layout_marginTop="22dp"
+            android:text="البرت"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+<TextView
+    android:id="@+id/disk_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/name_id"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:text="فیزیک"
+    android:textColor="@android:color/white"
+    android:textSize="15dp"
+    />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

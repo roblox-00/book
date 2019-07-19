@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/top_layer">
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/circle_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name_ed_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/antquabi"
+        android:hint="نام خود را وارد کنید"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="13dp" />
+
+
+    <Button
+        android:id="@+id/go_to_app_id"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name_ed_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="وارد برنامه شوید"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/antquabi"/>
+</RelativeLayout>
